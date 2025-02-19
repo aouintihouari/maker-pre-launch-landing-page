@@ -1,0 +1,439 @@
+/* Reset default browser CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Manrope", serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.h3 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.p1 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.p2 {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.regular {
+  font-weight: 500;
+}
+
+.white {
+  color: #fff;
+}
+
+.grey {
+  color: #777f98;
+}
+
+.black {
+  color: #080c20;
+}
+
+.red {
+  color: #ff2965;
+}
+
+.cyan {
+  color: #3ee9e5;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.black-bg {
+  background-color: #080c20;
+}
+
+.cyan-bg {
+  background-color: #3ee9e5;
+}
+
+.blue-bg {
+  background-color: #093f68;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-block {
+  margin-block: 30px;
+}
+
+.m-inline {
+  margin-inline: auto;
+}
+
+.container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.features {
+  margin-block: 100px;
+}
+
+.feature__image__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #093f68;
+  border-radius: 45px;
+  width: 120px;
+  height: 124px;
+}
+
+.feature__text__description {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.free__box,
+.paid__box {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 50px auto;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.paid__box {
+  margin-top: 60px;
+}
+
+.paid__box .price__image {
+  top: -32px;
+}
+
+.price__image {
+  position: absolute;
+  top: -24px;
+}
+
+.price {
+  margin-block: 10px;
+}
+
+.price__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.monthly-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.subscription-list {
+  margin-block: 10px;
+}
+
+.footer {
+  background-image: url(assets/bg-footer-squiggle.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.footer__title {
+  width: 70%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form__input {
+  margin-top: 20px;
+  width: 100%;
+  height: 48px;
+  background-color: #093f68;
+  color: #fff;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.form__input::placeholder {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.form__submit {
+  transition: 1s;
+  cursor: pointer;
+  margin-block: 20px;
+  height: 48px;
+  color: #093f68;
+  background-color: #3ee9e5;
+  border-radius: 24px;
+}
+
+.form__submit:hover {
+  border: 4px solid #3ee9e5;
+  color: #3ee9e5;
+  background-color: transparent;
+}
+
+.error-message {
+  visibility: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 357px;
+    background-image: url(./assets/illustration-hero-left.svg),
+      url(./assets/bg-hero-squiggle.svg),
+      url(./assets/illustration-hero-right.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 314px 356px, 314px 356px, 314px 356px;
+    background-position: left -30% top, center, right -33% top;
+  }
+
+  .logo {
+    padding: 5px 30px;
+    align-self: flex-start;
+  }
+
+  .illustration-mobile {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__title {
+    width: 60%;
+  }
+
+  .hero__description {
+    width: 55%;
+  }
+
+  .feature {
+    margin-left: 50px;
+    gap: 30px;
+    flex-direction: row;
+  }
+
+  .feature__text__content {
+    align-self: center;
+    margin-inline: 0;
+  }
+
+  .feature__text__title,
+  .feature__text__description {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .first-feature,
+  .third-feature {
+    margin-left: 100px;
+  }
+
+  .pricing__title,
+  .pricing__description {
+    width: 70%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .free__box,
+  .paid__box {
+    width: 50%;
+  }
+
+  .form {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .form__input {
+    width: 60%;
+  }
+
+  .form__submit {
+    width: 22%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    width: 100%;
+    height: 380px;
+    background-image: url(./assets/illustration-hero-left.svg),
+      url(./assets/bg-hero-squiggle.svg),
+      url(./assets/illustration-hero-right.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 314px 356px, auto, 314px 356px;
+    background-position: left top, center, right top;
+  }
+
+  .hero__title,
+  .hero__description {
+    width: 37%;
+  }
+
+  .hero__description {
+    margin-block: 0;
+  }
+
+  .logo {
+    padding: 5px 130px;
+    align-self: flex-start;
+  }
+
+  .features {
+    display: flex;
+    margin-inline: auto;
+    width: 80%;
+  }
+
+  .feature {
+    margin-left: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .feature__text__content {
+    margin-top: 0;
+  }
+
+  .first-feature,
+  .third-feature {
+    margin-left: 0;
+    margin-top: -30px;
+  }
+
+  .pricing-boxes__container {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .free__box {
+    width: 40%;
+    margin-top: -5px;
+    align-self: center;
+  }
+
+  .paid__box {
+    height: 420px;
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .pricing__title,
+  .pricing__description {
+    width: 50%;
+  }
+
+  .price__item {
+    margin-block: 10px;
+  }
+}
